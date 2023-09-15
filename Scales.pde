@@ -1,25 +1,16 @@
-void setup(){
+void setup() {
   size(800,800);
-  background(0,0,0);
+background(0,0,0);
 }
-
-
-
-void draw(){
-for(int y=-20; y < 900; y=y+120){
+void draw() {
+ for(int y=-20; y < 900; y=y+120){
     for(int x= 20; x < 900; x=x+70){
         scale(x,y);
-    }
 }
- 
-  //120 tall
-  //70 wide
- 
+ }
+ }
+void scale(int x, int y){ 
   
-}
-
-
-void scale(int x, int y){
  noStroke();
   stroke(255, 215, 0);
   strokeWeight(2);
@@ -51,10 +42,5 @@ void scale(int x, int y){
 
 stroke(0,0,0);
 noFill();
-//rect(365,400,70,120);
 
-}
-void mousePressed(){
-  System.out.println(mouseX);
-  System.out.println(mouseY);
 }
